@@ -1,0 +1,15 @@
+{
+  "name": "linter",
+  "version": "0.0.1",
+  "description": "My own linter preferences",
+  "main": "index.json",
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Chris Bala",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "5.0.0",
+    "eslint": "1.10.3"
+  }
+}
