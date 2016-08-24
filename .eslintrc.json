@@ -208,10 +208,6 @@
 	    2,
 	    "as-needed"
 	  ],
-	  "arrow-parens": [
-	    2,
-	    "as-needed"
-	  ],
 	  "arrow-spacing": 2,
 	  "constructor-super": 2,
 	  "no-class-assign": 2,
