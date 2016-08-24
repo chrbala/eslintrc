@@ -14,18 +14,28 @@ module.exports = {
 			2,
 			'never'
 		],
+		indent: [
+			2,
+			'tab'
+		],
 		quotes: [2, 'single'],
 		'no-dupe-args': 2,
 		'no-dupe-keys': 2,
+		'no-invalid-regexp': 2,
 		'no-func-assign': 2,
 		'no-sparse-arrays': 2,
 		'no-unreachable': 2,
+		'no-unsafe-negation': 2,
 		'use-isnan': 2,
 		'valid-typeof': 2,
 		'no-duplicate-case': 2,
 		'no-unexpected-multiline': 2,
 		'accessor-pairs': 2,
 		'block-scoped-var': 2,
+		complexity: [
+			2, 
+			{ max: 20 }
+		],
 		curly: [
 			2,
 			'multi'
@@ -47,6 +57,7 @@ module.exports = {
 		],
 		'no-extra-bind': 2,
 		'no-fallthrough': 2,
+		'no-global-assign': 2,
 		'no-implied-eval': 2,
 		'no-loop-func': 2,
 		'no-multi-spaces': 2,
@@ -60,6 +71,7 @@ module.exports = {
 		'no-proto': 2,
 		'no-redeclare': 2,
 		'no-script-url': 2,
+		'no-self-assign': 2,
 		'no-self-compare': 2,
 		'no-unused-expressions': [
 			2,
@@ -68,6 +80,7 @@ module.exports = {
 				allowTernary: true
 			}
 		],
+		'no-useless-escape': 2,
 		'no-useless-call': 2,
 		'no-useless-concat': 2,
 		'no-void': 2,
@@ -97,6 +110,7 @@ module.exports = {
 			}
 		],
 		'no-undef-init': 2,
+		'no-unused-vars': 2,
 		'no-use-before-define': 2,
 		'brace-style': 2,
 		camelcase: 2,
@@ -217,6 +231,7 @@ module.exports = {
 		'no-class-assign': 2,
 		'no-const-assign': 2,
 		'no-dupe-class-members': 2,
+		'no-duplicate-imports': 2,
 		'no-this-before-super': 2,
 		'object-shorthand': 2,
 		'prefer-arrow-callback': 2,
