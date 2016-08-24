@@ -2,10 +2,13 @@
   "name": "linter",
   "version": "0.0.1",
   "description": "My own linter preferences",
-  "main": ".eslintrc.json",
+  "main": ".eslintrc.js",
   "keywords": [
     "eslint"
   ],
+  "scripts": {
+    "test": "eslint .eslintrc.js"
+  },
   "author": "Chris Bala",
   "license": "ISC",
   "dependencies": {
