@@ -29,7 +29,6 @@ module.exports = {
 		'use-isnan': 2,
 		'valid-typeof': 2,
 		'no-duplicate-case': 2,
-		'no-unexpected-multiline': 2,
 		'accessor-pairs': 2,
 		'block-scoped-var': 2,
 		complexity: [
