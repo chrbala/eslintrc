@@ -3,6 +3,9 @@ module.exports = {
 	env: {
 		es6: true
 	},
+	plugins: [
+		'react'
+	],
 	rules:
 	{
 		strict: 0,
@@ -238,6 +241,7 @@ module.exports = {
 		'dot-location': [
 			2,
 			'property'
-		]
+		],
+		'react/jsx-uses-vars': 2
 	}
 }
