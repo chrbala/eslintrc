@@ -4,7 +4,7 @@ var eslint = {
 	strict: 0,
 	semi: [
 		2,
-		'never',
+		'always',
 	],
 	'comma-dangle': [
 		2,
@@ -236,11 +236,11 @@ var eslint = {
 		2,
 		'property',
 	],
-}
+};
 
 var react = {
 	'react/jsx-uses-vars': 2,
-}
+};
 
 var flow = {
 	'flowtype/boolean-style': [
@@ -298,11 +298,11 @@ var flow = {
 	],
 	'flowtype/use-flow-type': 1,
 	'flowtype/valid-syntax': 1,
-}
+};
 
 var header = {
 	'header/header': [2, 'line', ' @flow'],
-}
+};
 
 module.exports = {
 	parser: 'babel-eslint',
@@ -315,4 +315,4 @@ module.exports = {
 		'header',
 	],
 	rules: Object.assign({}, eslint, react, flow, header),
-}
+};
