@@ -278,7 +278,7 @@ var flow = {
 	],
 	'flowtype/space-after-type-colon': [
 		2,
-		'never',
+		'always',
 	],
 	'flowtype/space-before-generic-bracket': [
 		2,
