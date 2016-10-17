@@ -80,7 +80,7 @@ var eslint = {
 	'no-useless-concat': 2,
 	'no-void': 2,
 	'no-warning-comments': [
-		1,
+		2,
 		{
 			terms: [
 				'todo',
@@ -261,9 +261,8 @@ var flow = {
 	'flowtype/require-parameter-type': 2,
 	'flowtype/require-return-type': [
 		2,
-		'always',
 		{
-			annotateUndefined: 'always',
+			excludeArrowFunctions: 'expressionsOnly',
 		},
 	],
 	'flowtype/require-valid-file-annotation': [
