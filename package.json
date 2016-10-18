@@ -7,10 +7,11 @@
     "eslint"
   ],
   "scripts": {
-    "test": "npm run build && eslint .eslintrc.js && eslint src && ava",
+    "test": "ava",
     "build": "rollup -c",
-    "lint": "eslint src",
-    "push": "npm run test && npm publish"
+    "lint": "eslint .eslintrc.js && eslint src",
+    "validate": "npm run build && npm run lint && npm run test",
+    "push": "npm run build && npm run validate && npm publish"
   },
   "author": "Chris Bala",
   "license": "ISC",
