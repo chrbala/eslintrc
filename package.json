@@ -1,6 +1,6 @@
 {
   "name": "chrbala-linter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My own linter preferences",
   "main": "dist/index.js",
   "keywords": [
@@ -10,7 +10,7 @@
     "test": "npm run build && eslint .eslintrc.js && eslint src && ava",
     "build": "rollup -c",
     "lint": "eslint src",
-    "ava": "ava"
+    "push": "npm run test && npm publish"
   },
   "author": "Chris Bala",
   "license": "ISC",
