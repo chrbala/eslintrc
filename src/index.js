@@ -1,4 +1,11 @@
 const eslint = {
+	'no-var': 2,
+	'prefer-const': [
+		2,
+		{
+			destructuring: 'all',
+		},
+	],
 	strict: 0,
 	semi: [
 		2,
