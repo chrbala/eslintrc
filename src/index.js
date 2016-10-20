@@ -187,6 +187,7 @@ const eslint = {
 				':': 'before',
 				'&&': 'before',
 				'||': 'before',
+				'=': 'ignore',
 			},
 		},
 	],
