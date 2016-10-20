@@ -167,7 +167,6 @@ const eslint = {
 			max: 1,
 		},
 	],
-	'no-nested-ternary': 2,
 	'no-new-object': 2,
 	'no-unneeded-ternary': 2,
 	'one-var': [
