@@ -59,7 +59,6 @@ const eslint = {
 	'no-fallthrough': 2,
 	'no-global-assign': 2,
 	'no-implied-eval': 2,
-	'no-loop-func': 2,
 	'no-multi-spaces': 2,
 	'no-multi-str': 2,
 	'no-native-reassign': 2,
@@ -232,7 +231,6 @@ const eslint = {
 	'no-class-assign': 2,
 	'no-const-assign': 2,
 	'no-dupe-class-members': 2,
-	'no-duplicate-imports': 2,
 	'no-this-before-super': 2,
 	'object-shorthand': 2,
 	'prefer-arrow-callback': 2,
@@ -245,6 +243,8 @@ const eslint = {
 
 const react = {
 	'react/jsx-uses-vars': 2,
+	'react/jsx-uses-react': 2,
+	'react/react-in-jsx-scope': 2,
 };
 
 const flow = {

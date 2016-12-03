@@ -1,6 +1,6 @@
 {
   "name": "chrbala-linter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "My own linter preferences",
   "main": "dist/index.js",
   "keywords": [
