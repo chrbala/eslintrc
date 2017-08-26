@@ -33,7 +33,7 @@ const eslint = {
 	'accessor-pairs': 2,
 	'block-scoped-var': 2,
 	complexity: [
-		2, 
+		2,
 		{ max: 20 },
 	],
 	curly: [
@@ -263,18 +263,6 @@ const flow = {
 	],
 	'flowtype/no-dupe-keys': 2,
 	'flowtype/no-weak-types': 2,
-	'flowtype/require-return-type': [
-		2,
-		{
-			excludeArrowFunctions: 'expressionsOnly',
-		},
-	],
-	'flowtype/require-valid-file-annotation': [
-		2,
-		{
-			annotationStyle: 'line',
-		},
-	],
 	'flowtype/semi': [
 		2,
 		'always',
@@ -312,6 +300,15 @@ const modules = {
 
 export default ({modules: selectedModules}) => ({
 	parser: 'babel-eslint',
+	parserOptions: {
+		ecmaVersion: 6,
+		sourceType: 'module',
+		ecmaFeatures: {
+			jsx: true,
+			generators: true,
+			experimentalObjectRestSpread: true,
+		},
+	},
 	env: {
 		es6: true,
 	},
@@ -320,7 +317,7 @@ export default ({modules: selectedModules}) => ({
 		'flowtype',
 		'header',
 	],
-	rules: selectedModules.reduce((curr, module) => 
+	rules: selectedModules.reduce((curr, module) =>
 		(Object.assign(curr, modules[module]), curr)
-	, {}),
+		, {}),
 });
