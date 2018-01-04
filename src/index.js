@@ -104,9 +104,6 @@ const eslint = {
 	'no-shadow-restricted-names': 2,
 	'no-shadow': [
 		2,
-		{
-			builtinGlobals: true,
-		},
 	],
 	'no-undef-init': 2,
 	'no-unused-vars': 2,
@@ -141,7 +138,7 @@ const eslint = {
 		2,
 		'unix',
 	],
-	'max-depth': 2,
+	'max-depth': [2, 6],
 	'max-len': [
 		1,
 		80,
@@ -175,19 +172,6 @@ const eslint = {
 	'operator-assignment': [
 		2,
 		'always',
-	],
-	'operator-linebreak': [
-		2,
-		'none',
-		{
-			overrides: {
-				'?': 'before',
-				':': 'before',
-				'&&': 'before',
-				'||': 'before',
-				'=': 'ignore',
-			},
-		},
 	],
 	'quote-props': [
 		2,
@@ -281,7 +265,7 @@ const flow = {
 	],
 	'flowtype/type-id-match': [
 		2,
-		'^([A-Z][a-z0-9]+)+Type$',
+		'^([A-Z][A-Za-z0-9]+)+Type$',
 	],
 	'flowtype/union-intersection-spacing': [
 		2,
