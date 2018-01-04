@@ -92,6 +92,13 @@ const eslint = {
 			location: 'anywhere',
 		},
 	],
+	'no-warning-comments-clone/no-warning-comments': [
+		1,
+		{
+			terms: ['improvement'],
+			location: 'anywhere',
+		},
+	],
 	'no-with': 2,
 	radix: 2,
 	'wrap-iife': [
@@ -300,6 +307,7 @@ export default ({modules: selectedModules}) => ({
 		'react',
 		'flowtype',
 		'header',
+		'no-warning-comments-clone',
 	],
 	rules: selectedModules.reduce((curr, module) =>
 		(Object.assign(curr, modules[module]), curr)
