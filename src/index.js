@@ -314,6 +314,5 @@ export default ({modules: selectedModules}) => ({
 		'no-warning-comments-clone',
 	],
 	rules: selectedModules.reduce((curr, module) =>
-		(Object.assign(curr, modules[module]), curr)
-		, {}),
+		(Object.assign(curr, modules[module]), curr), {}),
 });
